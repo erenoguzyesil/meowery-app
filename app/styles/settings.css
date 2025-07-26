@@ -1,0 +1,48 @@
+:root {
+  --yes-background-color: #efffed;
+  --yes-hover-background-color: #dfffdb;
+  --yes-color: #19e307;
+
+  --no-background-color: #ffeeec;
+  --no-hover-background-color: #ffdedb;
+  --no-color: #d12717;
+}
+
+#settings-ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#settings-ul li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+#settings-ul li button {
+  padding: 0.5em;
+
+  border: 2px solid var(--yes-color);
+  box-shadow: 0 4px 0 0 var(--yes-color);
+  background-color: var(--yes-background-color);
+}
+
+#settings-ul li button.no {
+  border: 2px solid var(--no-color);
+  box-shadow: 0 4px 0 0 var(--no-color);
+  background-color: var(--no-background-color);
+}
+
+#settings-ul li button:hover {
+  background-color: var(--yes-hover-background-color);
+}
+
+#settings-ul li button.no:hover {
+  background-color: var(--no-hover-background-color);
+}
+
+#settings-ul li button:active {
+  transform: translateY(4px);
+  box-shadow: none;
+}

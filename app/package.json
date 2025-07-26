@@ -1,0 +1,39 @@
+{
+  "name": "meow_app",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist-all": "electron-builder -mwl",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "author": "dancing jovial penguin",
+  "license": "MIT",
+  "description": "Meow, meow, meow!",
+  "devDependencies": {
+    "electron": "^37.2.4",
+    "electron-builder": "^26.0.12"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "node-fetch": "^2.7.0"
+  },
+  "build": {
+    "appId": "meowery-app",
+    "productName": "Meowery",
+    "directories": {
+      "app": "./",
+      "buildResources": "./assets/icons",
+      "output": "../out"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+}

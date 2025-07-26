@@ -1,0 +1,78 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --body-background-color: #ffd4af;
+
+  --main-background-color: #ffc6f6;
+  --main-border-color: #95133f;
+
+  --button-color: #f8dee7;
+  --button-border-color: #ff2d73;
+  --button-hover-color: #ffabc7;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--body-background-color);
+  color: #000;
+
+  font-size: 16px;
+  font-family: "Inconsolata", sans-serif;
+  line-height: 1.5;
+}
+
+button,
+a {
+  font: inherit;
+  cursor: pointer;
+}
+
+#titlebar {
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  padding: 0.15em;
+
+  app-region: drag;
+  user-select: none;
+
+  background-color: var(--main-border-color);
+  color: #fff;
+
+  text-align: center;
+  font-weight: 700;
+}
+
+#meow-audio {
+  display: none;
+}
+
+#settings-switch {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  z-index: 2;
+
+  color: var(--main-border-color);
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+#settings-switch:hover {
+  color: #eb23ee;
+  text-decoration: none;
+}

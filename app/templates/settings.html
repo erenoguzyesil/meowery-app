@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>meowery - settings</title>
+
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/settings.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="titlebar">meowery settings</div>
+
+    <main>
+      <h1>settings</h1>
+
+      <ul id="settings-ul">
+        <li>
+          <span>play "meow" sound every time you click "new cat"?</span>
+          <button type="button" id="play-meow-sound-button">yes!</button>
+        </li>
+      </ul>
+    </main>
+
+    <a href="../templates/index.html" id="settings-switch">^x_x^</a>
+
+    <audio src="../assets/meow.ogg" id="meow-audio"></audio>
+
+    <script src="../scripts/random.js"></script>
+    <script src="../scripts/components.js"></script>
+    <script src="../scripts/settings.js"></script>
+  </body>
+</html>
