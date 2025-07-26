@@ -15,13 +15,13 @@ Regardless, you can also run the application on your own machine through this nu
 
 ### App Directory
 
-1. Create a directory for the application's contents and fork this GitHub repository there.
+1. Fork this GitHub repository, create a directory for the application's contents, and clone your forked repository there.
 2. Install the necessary NPM dependencies, which are listed on `package.json`, by running `npm install`. A `node_modules` folder will appear inside the app directory.
 3. Create an `.env` file on the root of the app directory, where you're soon going to provide a URL from your server that fetches GIFs from Tenor API.
 
 ### Server Directory
 
-4. Create another directory for the server, which is going to extract GIFs and deliver them to the application. On this directory, fork the [meowery-server](https://github.com/erenoguzyesil/meowery-server) repository.
+4. Fork the [meowery-server](https://github.com/erenoguzyesil/meowery-server) repository, create another directory for the server, which is going to extract GIFs and deliver them to the application, and clone your forked repository on this directory.
 5. Run `npm install` to gather the necessary dependencies.
 6. Create an `.env` file, and type in a Tenor API key as assigned to a key called `TENOR_API_KEY` ([grab one here](https://developers.google.com/tenor/guides/quickstart)):
 ```
@@ -59,7 +59,7 @@ app/
 out/
 
 server/
-    node_modules
+    node_modules/
     .env (-> TENOR_API_KEY here)
     .gitignore
     index.js
