@@ -30,7 +30,12 @@
       "target": "dmg"
     },
     "win": {
-      "target": "nsis"
+      "target": {
+        "target": "nsis",
+        "arch": [
+          "ia32"
+        ]
+      }
     },
     "linux": {
       "target": "AppImage"

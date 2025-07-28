@@ -63,6 +63,7 @@ server/
     .env (-> TENOR_API_KEY here)
     .gitignore
     index.js
+    LICENSE
     package-lock.json
     package.json
 ```
