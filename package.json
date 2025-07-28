@@ -27,7 +27,13 @@
       "output": "../out"
     },
     "mac": {
-      "target": "dmg"
+      "target": {
+        "target": "dmg",
+        "arch": [
+          "universal",
+          "arm64"
+        ]
+      }
     },
     "win": {
       "target": {
